@@ -26,9 +26,9 @@ Figure model is the in-code representation of a figure resource from a pod.
 | field | type | vocab |
 | - | - | - |
 | createdAt | string | ? |
+| updatedAt | string | ? |
 | imageUrl | string | ? |
 | figcaption | string | ? |
-
 
 ### SolidModel
 

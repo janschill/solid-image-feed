@@ -1,6 +1,12 @@
 # solid-image-feed
 
-Manage your images and subscribe to feeds.
+## tl;dr
+
+Render images from your pod and share them with others.
+
+## Longer Version
+
+Point the application to any container in your pod and it renders them on the page. Manage the protection on those images to allow the sharing with other users. You can also subscribe to other users and have their public and protected images in a feed.
 
 ## Getting Started
 
@@ -24,3 +30,6 @@ npm run dev
 
 * Comments on images
 * Notifications of newly added images
+* Likes?
+* Bookmarks?
+* Searching public images? How to build an index?
