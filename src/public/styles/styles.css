@@ -1,0 +1,21 @@
+:root {
+  --primary-color: #e76f51;
+  --secondary-color: #ffffff;
+  --dark-color: #161616;
+  --bright-color: #e7e7e7;
+}
+
+html {
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 16px;
+}
+
+.title {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.feed-figure {
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
