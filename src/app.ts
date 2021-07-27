@@ -1,13 +1,13 @@
 import express from "express";
 import path from "path"
-import "./parser"
+// import "./parser"
 
 const app = express();
 const port = 3000;
 
 const IMAGE_FEED_URL = "https://janschill.net/public/solid-image-feed-example/"
 
-app.use(express.static('public'))
+app.use(express.static('src/public'))
 
 app.get("/", (req, res) => {
   res.sendFile(path.join(__dirname, "/public/index.html"));
