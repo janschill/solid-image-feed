@@ -1,5 +1,9 @@
 # Architecture
 
+## Application Development
+
+Directory structure and code is generated using [express-generator-typescript](https://github.com/seanpmaxwell/express-generator-typescript#readme).
+
 ## Image Feed
 
 * Subscribe to WebIDs to see their images in your feed
