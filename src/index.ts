@@ -1,11 +1,14 @@
 import { NamedNode } from "rdflib";
+import SolidImage from "./components/image";
 
 const name = "Solid Image Feed";
+customElements.define('solid-image', SolidImage);
 
 function template(data) {
   return `
     <h1>${data.title}</h1>
-    <p>${data.body}</p>`;
+    <p>${data.body}</p>
+    <solid-image>Solid Image click me</solid-image>`;
 }
 
 const SolidImageFeed = {
