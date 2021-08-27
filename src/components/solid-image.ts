@@ -1,4 +1,4 @@
-class SolidImage extends HTMLElement {
+export default class SolidImage extends HTMLElement {
   constructor() {
     super();
     this.addEventListener('click',
@@ -17,4 +17,3 @@ class SolidImage extends HTMLElement {
   }
 }
 
-export default SolidImage;
