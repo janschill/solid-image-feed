@@ -28,8 +28,8 @@ npm run dev
 
 ## Possible Features
 
-* Comments on images
-* Notifications of newly added images
+* Comments on images ([solid-comment](https://github.com/janschill/solid-comment))
+* Notifications of newly added images ([solid-inbox](https://github.com/solid/solid-inbox)?)
 * Likes?
 * Bookmarks?
 * Searching public images? How to build an index?
