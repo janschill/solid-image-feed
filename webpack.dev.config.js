@@ -32,7 +32,9 @@ module.exports = [
       "@trust/webcrypto": "crypto",
     },
     devServer: {
-      contentBase: "./dist",
+      static: {
+        directory: path.resolve(__dirname, "dist"),
+      }
     },
     devtool: "source-map",
   },
