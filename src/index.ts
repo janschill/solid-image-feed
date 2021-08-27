@@ -1,10 +1,10 @@
 import { NamedNode } from "rdflib";
-import SolidFeed from "./components/solid-feed";
-import SolidImage from "./components/solid-image";
+import FeedElement from "./components/feed-element";
+import ImageElement from "./components/image-element";
 
-const name = "Solid Image Feed";
-customElements.define('solid-feed', SolidFeed);
-customElements.define('solid-image', SolidImage);
+const SITE_NAME = "Solid Image Feed";
+customElements.define('feed-element', FeedElement);
+customElements.define('image-element', ImageElement);
 
 function template(data) {
   return `
@@ -12,13 +12,13 @@ function template(data) {
     <template>
       <h2>Feed</h2>
     </template>
-    <solid-feed></solid-feed>`;
+    <feed-element></feed-element>`;
 }
 
 const SolidImageFeed = {
   render: (): HTMLElement => {
     const $app = document.createElement("main");
-    $app.innerHTML = template({ title: name, body: "This is our site body" })
+    $app.innerHTML = template({ title: SITE_NAME, body: "" })
 
     return $app;
   },

@@ -1,4 +1,5 @@
-import SolidImage from "./solid-image";
+import SolidImage from "../models/solid-image";
+import ImageElement from "./image-element";
 
 export default class SolidFeed extends HTMLElement {
   constructor() {
@@ -8,15 +9,18 @@ export default class SolidFeed extends HTMLElement {
   }
 
   // Called when element connected to page
-  connectedCallback() {
+  async connectedCallback() {
     const template = document.querySelector("template");
     const clone = document.importNode(template.content, true);
     this.attachShadow({ mode: 'open' });
     this.shadowRoot.appendChild(clone);
 
-    const solidImage = new SolidImage();
-    solidImage.innerHTML = `<h3>First image</h3>`
-    this.shadowRoot.appendChild(solidImage);
+    // fetch here the images
+    const images = await SolidImage.all();
+    images.forEach(image => {
+      const solidImage = new ImageElement(image);
+      this.shadowRoot.appendChild(solidImage);
+    })
   }
 
   attachStyles() {
