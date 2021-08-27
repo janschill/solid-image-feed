@@ -29,6 +29,8 @@ npm run dev
 ## Possible Features
 
 * Comments on images ([solid-comment](https://github.com/janschill/solid-comment))
+  * the auth module would need to extracted
+  * storing comment references in a RDF file added
 * Notifications of newly added images ([solid-inbox](https://github.com/solid/solid-inbox)?)
 * Likes?
 * Bookmarks?
