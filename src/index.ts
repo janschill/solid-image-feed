@@ -4,7 +4,7 @@ import ImageElement from "./components/image-element";
 
 const SITE_NAME = "Solid Image Feed";
 customElements.define('feed-element', FeedElement);
-customElements.define('image-element', ImageElement);
+// customElements.define('image-element', ImageElement);
 
 function template(data) {
   return `
