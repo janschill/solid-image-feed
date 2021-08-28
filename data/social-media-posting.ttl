@@ -1,0 +1,16 @@
+@prefix : <#> .
+@prefix schema: <http://schema.org/> .
+@prefix author: <https://janschill.net/profile/card#me> .
+@prefix imageUrl: <https://i.picsum.photos/id/352/200/300.jpg?hmac=JRE6d4eB1tvPUpBESG8XEM2_22EaXNe2luRrVkydr2E> .
+
+:content
+  a schema:ImageObject;
+  schema:contentUrl imageUrl:;
+  schema:caption "This is my photo caption" .
+
+:id1
+  a schema:SocialMediaPosting;
+  schema:datePublished "2021-08-28";
+  schema:headline "My first post here";
+  schema:sharedContent :content;
+  schema:author author: .
