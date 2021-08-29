@@ -27,4 +27,3 @@ export default class SolidFeed extends HTMLElement {
     this.style.padding = "20px";
   }
 }
-
