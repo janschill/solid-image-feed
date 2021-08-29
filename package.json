@@ -26,7 +26,6 @@
   "license": "MIT",
   "dependencies": {
     "@inrupt/solid-client-authn-browser": "^1.11.2",
-    "@webcomponents/shadycss": "^1.11.0",
     "rdflib": "^2.2.7"
   },
   "devDependencies": {
